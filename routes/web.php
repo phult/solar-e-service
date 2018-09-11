@@ -15,6 +15,6 @@ $app->get('/', function () use ($app) {
     echo 'Elight service';
 });
 
-$app->get('/schedule/{apiKey}/{deviceId}', [
-    'uses' => 'ScheduleController@get',
+$app->get('/state/{apiKey}/{deviceId}', [
+    'uses' => 'ScheduleController@state',
 ]);
