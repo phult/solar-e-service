@@ -21,17 +21,21 @@ class ScheduleController extends BaseController
             $deviceSetting = $schedule['setting'];
             $deviceSetting = json_decode($deviceSetting, true);
             foreach ($deviceSetting as $pin => $pinSetting) {
-                $result[$pin] = $pinSetting['default'];
+                $pinState = [
+                    'pin' => $pin,
+                    'state' => $pinSetting['default'],
+                ];
                 //check on setting
                 $state = $this->checkPinState($pinSetting['on'], $pinSetting['default'], 'on');
                 if ($state != false) {
-                    $result[$pin] = $state;
+                    $pinState['state'] = $state;
                 }
                 //check off setting
                 $state = $this->checkPinState($pinSetting['off'], $pinSetting['default'], 'off');
                 if ($state != false) {
-                    $result[$pin] = $state;
+                    $pinState['state'] = $state;
                 }
+                $result[] = $pinState;
             }
         }
         return $this->success([
