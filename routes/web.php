@@ -12,7 +12,7 @@
  */
 
 $app->get('/', function () use ($app) {
-    echo 'Elight service';
+    echo 'Solar-e service';
 });
 
 $app->get('/state/{apiKey}/{deviceId}', [

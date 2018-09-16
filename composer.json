@@ -1,10 +1,10 @@
 {
-    "name": "laravel/lumen",
+    "name": "solar-e",
     "description": "The Laravel Lumen Framework.",
     "keywords": [
-        "framework",
-        "laravel",
-        "lumen"
+        "IoT",
+        "service",
+        "solar-e"
     ],
     "license": "MIT",
     "type": "project",
