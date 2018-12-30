@@ -16,7 +16,7 @@
            folder instead of downloading all of them to reduce the load. -->
         <link rel="stylesheet" href="/dist/css/skins/_all-skins.min.css">
         <!-- jQuery 2.2.3 -->
-        <script src="/plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="/js/jquery-2.2.3.min.js"></script>
         <script src="/js/angular.js"></script>
         <script src="/js/angular-sanitize.js"></script>
         <script src="/js/solare-app.js"></script>
