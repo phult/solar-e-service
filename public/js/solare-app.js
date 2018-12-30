@@ -1,0 +1,1 @@
+var solareApp = angular.module('solareApp', ['ngSanitize']);

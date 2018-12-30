@@ -18,3 +18,9 @@ $app->get('/', function () use ($app) {
 $app->get('/state/{apiKey}/{deviceId}', [
     'uses' => 'ScheduleController@state',
 ]);
+$app->get('/setting/{apiKey}/{deviceId}', [
+    'uses' => 'ScheduleController@setting'
+]);
+$app->post('/setting/{apiKey}/{deviceId}', [
+    'uses' => 'ScheduleController@saveSetting'
+]);

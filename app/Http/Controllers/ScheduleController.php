@@ -4,10 +4,50 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\BaseController;
 use App\Models\Schedule;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class ScheduleController extends BaseController
 {
+    public function setting($apiKey, $deviceId, Request $request)
+    {
+        $schedule = Schedule::where('device_id', '=', $deviceId)
+            ->whereHas('user', function ($q) use ($apiKey) {
+                $q->where('api_key', '=', $apiKey)
+                    ->where('status', '=', 'active');
+            })
+            ->first(['setting', 'device_id']);
+        if ($schedule !== null) {
+            $user = User::where('api_key', '=', $apiKey)
+                ->where('status', '=', 'active')->first();
+            return view('setting', [
+                'setting' => $schedule->setting,
+                'deviceId' => $schedule->device_id,
+                'user' => $user,
+            ]);
+        } else {
+            return $this->error([
+                'data' => 'not found',
+            ]);
+        }
+
+    }
+    public function saveSetting($apiKey, $deviceId, Request $request)
+    {
+        $schedule = Schedule::where('device_id', '=', $deviceId)
+            ->whereHas('user', function ($q) use ($apiKey) {
+                $q->where('api_key', '=', $apiKey)
+                    ->where('status', '=', 'active');
+            })
+            ->first();
+        if ($schedule != null) {
+            $schedule->setting = $request->input('setting');
+            $schedule->save();
+            return $this->success();
+        } else {
+            return $this->error();
+        }
+    }
     public function state($apiKey, $deviceId, Request $request)
     {
         $result = [];

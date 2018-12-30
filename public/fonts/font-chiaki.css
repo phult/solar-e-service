@@ -1,0 +1,240 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+
+
+/* 
+    Created on : Jan 4, 2016, 1:53:01 PM
+    Author     : Manh Ha Hoang
+*/
+
+@font-face {
+    font-family: 'Chiaki';
+    src: url('/frontend/fonts/chiaki.eot?9tccdw');
+    src: url('/frontend/fonts/chiaki.eot?#iefix9tccdw') format('embedded-opentype'), url('/frontend/fonts/chiaki.ttf?9tccdw') format('truetype'), url('/frontend/fonts/chiaki.woff?9tccdw') format('woff'), url('/frontend/fonts/chiaki.svg?9tccdw#Hotdeal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.hd {
+    display: inline-block;
+    font-family: 'Chiaki';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.hd-ems:before {
+    content: "\e903";
+}
+
+.hd-cong-nghe:before {
+    content: "\e801";
+}
+
+.hd-me-be:before {
+    content: "\e802";
+}
+
+.hd-my-pham:before {
+    content: "\e803";
+}
+
+.hd-phu-kien:before {
+    content: "\e804";
+}
+
+.hd-san-pham:before {
+    content: "\e805";
+}
+
+.hd-thuc-pham:before {
+    content: "\e806";
+}
+
+.hd-tt-nu:before {
+    content: "\e807";
+}
+
+.hd-tt-treem:before {
+    content: "\e808";
+}
+
+.hd-beauty:before {
+    content: "\e60a";
+}
+
+.hd-entertainment:before {
+    content: "\e60b";
+}
+
+.hd-fashion:before {
+    content: "\e60c";
+}
+
+.hd-product:before {
+    content: "\e60d";
+}
+
+.hd-restaurant:before {
+    content: "\e60e";
+}
+
+.hd-travel:before {
+    content: "\e60f";
+}
+
+.hd-sort:before {
+    content: "\e800";
+}
+
+.hd-order:before {
+    content: "\e625";
+}
+
+.hd-total:before {
+    content: "\e626";
+}
+
+.hd-back:before {
+    content: "\e621";
+}
+
+.hd-calendar:before {
+    content: "\e622";
+}
+
+.hd-tick:before {
+    content: "\e623";
+}
+
+.hd-x:before {
+    content: "\e624";
+}
+
+.hd-lock:before {
+    content: "\e620";
+}
+
+.hd-user:before {
+    content: "\e607";
+}
+
+.hd-star-o:before {
+    content: "\e61a";
+}
+
+.hd-price:before {
+    content: "\e61b";
+}
+
+.hd-area:before {
+    content: "\e61c";
+}
+
+.hd-location:before {
+    content: "\e61d";
+}
+
+.hd-list:before {
+    content: "\e61e";
+}
+
+.hd-sort-arrow:before {
+    content: "\e61f";
+}
+
+.hd-cart:before {
+    content: "\e612";
+}
+
+.hd-minus:before {
+    content: "\e614";
+}
+
+.hd-plus:before {
+    content: "\e615";
+}
+
+.hd-evoucher:before {
+    content: "\e616";
+}
+
+.hd-ticket:before {
+    content: "\e619";
+}
+
+.hd-star:before {
+    content: "\e617";
+}
+
+.hd-clock:before {
+    content: "\e618";
+}
+
+.hd-share:before {
+    content: "\e613";
+}
+
+.hd-map-marker:before {
+    content: "\e610";
+}
+
+.hd-arr-down-square:before {
+    content: "\e600";
+}
+
+.hd-arrow-down:before {
+    content: "\e601";
+}
+
+.hd-icon-circle:before {
+    content: "\e602";
+}
+
+.hd-angle-double-right:before {
+    content: "\e603";
+}
+
+.hd-newsletter:before {
+    content: "\e604";
+}
+
+.hd-search:before {
+    content: "\e605";
+}
+
+.hd-shipping:before {
+    content: "\e606";
+}
+
+.hd-gps:before {
+    content: "\e608";
+}
+
+.hd-email:before {
+    content: "\e609";
+}
+
+.hd-angle-down:before {
+    content: "\e611";
+}
+
+.hd-nav:before {
+    content: "\e900";
+}
+
+.hd-remove:before {
+    content: "\e901";
+}
+
+.hd-sort2:before {
+    content: "\e902";
+}
